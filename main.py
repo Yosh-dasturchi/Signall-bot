@@ -181,7 +181,7 @@ def main():
 
 if __name__ == "__main__":
     main()
-        if "values" not in r:
+    if "values" not in r:
             return None
 
         prices = [float(i["close"]) for i in r["values"]]
