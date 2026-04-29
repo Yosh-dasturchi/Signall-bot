@@ -168,3 +168,8 @@ app.add_handler(CommandHandler("signal", signal))
 app.add_handler(CommandHandler("stop", stop))
 
 app.run_polling()
+import os
+
+PORT = int(os.environ.get("PORT", 10000))
+
+print("Bot started...")
